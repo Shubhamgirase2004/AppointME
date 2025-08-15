@@ -39,25 +39,18 @@ It supports **user and doctor registration**, **login**, **appointment booking/c
 ```sh
 git clone https://github.com/yourusername/AppointMe.git
 cd AppointMe
+
 2️⃣ Install dependencies
 Backend
-sh
-Copy
-Edit
+
 cd backend
 npm install
+
 Frontend
-sh
-Copy
-Edit
 cd ../frontend
 npm install
-3️⃣ Set up environment variables
-Create a .env file in the backend directory:
 
-ini
-Copy
-Edit
+3️⃣ Set up environment variables
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
@@ -65,23 +58,14 @@ CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 ADMIN_EMAIL=your_admin_email
 ADMIN_PASSWORD=your_admin_password
+
 4️⃣ Start the servers
-Backend
-sh
-Copy
-Edit
 cd backend
 npm start
-Frontend
-sh
-Copy
-Edit
 cd ../frontend
 npm start
+
 📂 Folder Structure
-pgsql
-Copy
-Edit
 AppointMe/
   backend/
     controllers/
@@ -94,6 +78,7 @@ AppointMe/
     src/
     public/
     package.json
+
 📡 API Overview
 User: /api/user/register, /api/user/login, /api/user/profile, /api/user/appointments
 
@@ -102,17 +87,13 @@ Doctor: /api/doctor/register, /api/doctor/login, /api/doctor/profile, /api/docto
 Admin: /api/admin/login, /api/admin/doctors, /api/admin/appointments
 
 📝 Notes
+
 ✅ Store all sensitive data (JWT secrets, DB URIs) in .env
 
 📦 Ensure MongoDB and Cloudinary credentials are correct
 
 🔑 Use valid MongoDB ObjectIds for database references
 
-📜 License
-This project is licensed under the MIT License.
-
 Made with ❤️ by AppointMe - Doctor Appointment Booking Platform
 
-yaml
-Copy
-Edit
+
